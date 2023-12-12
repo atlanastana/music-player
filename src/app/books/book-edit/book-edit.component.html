@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-xs-12">
+    <form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-xs-12">
+          <button type="submit" class="btn btn-success">Save</button>
+          <button type="button" class="btn btn-danger" (click)="onCancel()">Cancel</button>
+        </div>
+      </div>
+      <fieldset class="form-group">
+        <input formControlName="name" placeholder="название книги" class="form-control form-control-lg"/>
+      </fieldset>
+      <fieldset class="form-group">
+        <input formControlName="author" placeholder="автор книги" class="form-control form-control-lg"/>
+      </fieldset>
+      <fieldset class="form-group">
+        <input formControlName="pageCount" placeholder="количество страниц" class="form-control form-control-lg"/>
+      </fieldset>
+      <fieldset class="form-group">
+        <input formControlName="language" placeholder="язык книги" class="form-control form-control-lg"/>
+      </fieldset>
+      <fieldset class="form-group">
+        <input formControlName="genre" placeholder="жанр книги" class="form-control form-control-lg"/>
+      </fieldset>
+    </form>
+  </div>
+</div>
