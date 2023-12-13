@@ -1,5 +1,6 @@
-import {Component} from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
 import {MusicService} from "../store/music.service";
+import {MatPaginator} from "@angular/material/paginator";
 
 @Component({
   selector: 'app-music-player',
