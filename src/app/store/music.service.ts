@@ -1,11 +1,10 @@
 import {Injectable} from "@angular/core";
 import {Music} from "../models/music.model";
-import {Subject} from "rxjs";
 
 
 @Injectable()
 export class MusicService {
-  playList = new Subject<Array<Music>>();
+
   Playlist: Array<Music> = [
     {
       id: 1,
@@ -28,7 +27,6 @@ export class MusicService {
       duration: '8'
     }
   ]
-
 
   getList() {
     return this.Playlist.slice();
